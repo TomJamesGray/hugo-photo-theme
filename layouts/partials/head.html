@@ -1,0 +1,8 @@
+<head>
+    <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+</head>
