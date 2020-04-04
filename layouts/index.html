@@ -1,3 +1,11 @@
 {{ define "main" }}
-
+<div class="container">
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+    <a href="#">
+        <article>
+            <img src="{{.Params.imgPostUrl}}"><br>
+        </article>
+    </a>
+    {{end}}
+</div>
 {{end}}

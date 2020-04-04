@@ -80,3 +80,13 @@ h5{
     text-align:center;
     padding:30px 0px;
 }
+.container{
+	position:relative;
+	width:70%;
+	height:50px;
+	margin:0 auto;
+}
+.container img{
+	position: absolute;
+	padding-bottom:10px;
+}
