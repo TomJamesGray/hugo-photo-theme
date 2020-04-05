@@ -11,14 +11,16 @@ $(window).resize(function(){
 function mosaicGrid(selector,target) {
   var cols = [0,0,0];
   var allTarget = $(selector).find(target);
+  var padding = 20;
+  var imgWidth = Math.floor((($(selector).width() - padding * (cols.length -1)))/ cols.length)
   if (0 === allTarget.length)
     return;
   allTarget.one('load', function(e){
       var pos = minPos(cols);
-      var x = pos * 100/cols.length;
+      var x = pos * (imgWidth + padding);
       var y = cols[pos];
-      $(this).css({left: x + "%", top: y + "px", width: Math.floor(100/cols.length)+"%"});
-      cols[pos] = cols[pos] + $(this).height();
+      $(this).css({left: x + "px", top: y + "px", width: imgWidth +"px"});
+      cols[pos] = cols[pos] + $(this).height() + padding;
       $(selector).height(Math.max.apply(null, cols) );
       $(this).off(e);
   }).each(function(){
