@@ -55,6 +55,7 @@ html,body{
 }
 h1,h2,h3,h4,h5,h6,p{
     color:#111;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 h1{
     font-size:2em;
@@ -72,14 +73,6 @@ h5{
     font-size:0.83em;
 }
 
-.site-title{
-    font-size: 72px;
-}
-.site-title,.site-strap-line{
-    width:100%;
-    text-align:center;
-    padding:30px 0px;
-}
 .container{
 	position:relative;
 	width:60%;
@@ -89,4 +82,41 @@ h5{
 .container img{
 	position: absolute;
 	margin-bottom:100px;
+}
+nav{
+	height:auto;
+	width:20%;
+	position:fixed;
+	left:0px;
+	/*top:0px;*/
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+nav{
+	font-size: 24px;
+	padding-left:10px;
+	padding-top: 10px;
+}
+nav h1{
+	line-height:1.5em;
+}
+nav hr{
+	width:60%;
+	margin-top:1.3em;
+	border-color:#333;
+	border-style:solid;
+}
+nav a:link{
+	color:#111;
+	text-decoration: none;
+}
+nav a:visited{
+	color:#111;
+	text-decoration: none;
+}
+nav a:hover{
+	color:#111;
+	text-decoration: underline;
+}
+nav a:active{
+	color:#111;
 }

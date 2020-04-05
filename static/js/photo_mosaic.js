@@ -1,4 +1,4 @@
-// From https://stackoverflow.com/a/36260195
+// Slightly modified code from https://stackoverflow.com/a/36260195
 
 $(function(){
 	mosaicGrid('.container', 'img');

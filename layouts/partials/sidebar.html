@@ -1,0 +1,18 @@
+<!--<aside>-->
+    <nav>
+        <a href="#">
+            <h1>{{ .Site.Title }}</h1>
+        </a>
+        <h3>{{ .Site.Params.strap_line }}</h3>
+        <hr>
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}">
+                    <span> {{.Name}}</span>
+                </a>
+            </li>
+            {{end}}
+        </ul>
+    </nav>
+<!--</aside>-->
