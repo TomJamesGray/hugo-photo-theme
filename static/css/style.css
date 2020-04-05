@@ -55,7 +55,7 @@ html,body{
 }
 h1,h2,h3,h4,h5,h6,p{
     color:#111;
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Lora', serif;
 }
 h1{
     font-size:2em;
@@ -83,21 +83,20 @@ h5{
 	position: absolute;
 	margin-bottom:100px;
 }
+/*Nav Styling*/
 nav{
 	height:auto;
 	width:20%;
 	position:fixed;
 	left:0px;
 	/*top:0px;*/
-	font-family: 'PT Sans Narrow', sans-serif;
-}
-nav{
+	font-family: 'Lora', serif;
 	font-size: 24px;
 	padding-left:10px;
 	padding-top: 10px;
 }
 nav h1{
-	line-height:1.5em;
+	line-height:1.7em;
 }
 nav hr{
 	width:60%;
@@ -105,6 +104,20 @@ nav hr{
 	border-color:#333;
 	border-style:solid;
 }
+nav li{
+	line-height:1.5em;
+	font-size: 0.65em;
+}
+nav .menu-section{
+	padding-bottom: 20px;
+}
+nav .short-bio{
+	font-size: 0.65em;
+	padding-right: 50px;
+	/*padding-top:20px;*/
+}
+
+/*Link styling for nav*/
 nav a:link{
 	color:#111;
 	text-decoration: none;

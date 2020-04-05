@@ -3,9 +3,11 @@
         <a href="#">
             <h1>{{ .Site.Title }}</h1>
         </a>
-        <h3>{{ .Site.Params.strap_line }}</h3>
+        {{ with .Site.Params.shortBio }}
+        <p class="short-bio">{{ . }}</p>
+        {{end}}
         <hr>
-        <ul>
+        <ul class="menu-section">
             {{ range .Site.Menus.main }}
             <li>
                 <a href="{{ .URL }}">
@@ -14,5 +16,17 @@
             </li>
             {{end}}
         </ul>
+        {{ with .Site.Menus.socials }}
+        <ul class="menu-section">
+            {{ range . }}
+            <li>
+                <a href="{{ .URL }}">
+                    <span> {{.Name}}</span>
+                </a>
+            </li>
+            {{end}}
+            {{end}}
+        </ul>
+
     </nav>
 <!--</aside>-->
