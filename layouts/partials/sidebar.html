@@ -3,6 +3,9 @@
         <a href="#">
             <h1>{{ .Site.Title }}</h1>
         </a>
+        <a href="#" class="menu-toggle" id="open-menu">
+            <h3>Menu</h3>
+        </a>
         {{ with .Site.Params.shortBio }}
         <p class="short-bio">{{ . }}</p>
         {{end}}
