@@ -4,7 +4,7 @@
 name = "Photo_theme"
 license = "MIT"
 licenselink = "https://github.com/TomJamesGray/hugo-photo-theme/blob/master/LICENSE"
-description = "A simple, responsive gallery grid theme"
+description = "A simple, responsive photo grid theme"
 homepage = "http://example.com/"
 tags = ["Gallery", "Portfolio"]
 features = []

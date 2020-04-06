@@ -9,27 +9,29 @@
         {{ with .Site.Params.shortBio }}
         <p class="short-bio">{{ . }}</p>
         {{end}}
-        <hr>
-        <ul class="menu-section">
-            {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}">
-                    <span> {{.Name}}</span>
-                </a>
-            </li>
+        {{ with .Site.Menus }}
+            <hr>
+            <ul class="menu-section">
+                {{ range .main }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+                {{end}}
+            </ul>
+            {{ with .socials }}
+            <ul class="menu-section">
+                {{ range . }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+                {{end}}
             {{end}}
-        </ul>
-        {{ with .Site.Menus.socials }}
-        <ul class="menu-section">
-            {{ range . }}
-            <li>
-                <a href="{{ .URL }}">
-                    <span> {{.Name}}</span>
-                </a>
-            </li>
-            {{end}}
-            {{end}}
-        </ul>
+            </ul>
+        {{end}}
 
     </nav>
 <!--</aside>-->

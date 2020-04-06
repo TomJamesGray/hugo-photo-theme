@@ -1,7 +1,6 @@
 {{ define "main" }}
 <div class="container photo-grid">
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
-    <a href="#">
         <article>
             <img src="{{.Params.imgPostUrl}}"><br>
             <div class="img-description">
@@ -10,7 +9,6 @@
                 </div>
             </div>
         </article>
-    </a>
     {{end}}
 </div>
 {{end}}
