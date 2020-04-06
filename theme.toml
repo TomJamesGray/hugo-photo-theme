@@ -3,19 +3,13 @@
 
 name = "Photo_theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+licenselink = "https://github.com/TomJamesGray/hugo-photo-theme/blob/master/LICENSE"
+description = "A simple, responsive gallery grid theme"
 homepage = "http://example.com/"
-tags = []
+tags = ["Gallery", "Portfolio"]
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Tom Gray"
+  homepage = "https://github.com/TomJamesGray/hugo-photo-theme"

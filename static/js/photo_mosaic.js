@@ -56,11 +56,18 @@ function mosaicGrid(selector,target) {
         return;
     allTarget.one('load', function(e){
         var pos = minPos(cols);
+        console.log("loading")
         var x = pos * (imgWidth + padding);
         var y = cols[pos];
-        $(this).css({left: x + "px", top: y + "px", width: imgWidth +"px"});
+
+        var updatedCss = {left: x + "px", top: y + "px", width: imgWidth +"px"}
+
+        $(this).css(updatedCss);
         cols[pos] = cols[pos] + $(this).height() + padding;
         $(selector).height(Math.max.apply(null, cols) );
+
+        updatedCss["height"] =  $(this).height()
+        $(this).siblings(".img-description").css(updatedCss );
         $(this).off(e);
     }).each(function(){
     if(this.complete)

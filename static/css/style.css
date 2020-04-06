@@ -79,9 +79,30 @@ h5{
 	height:50px;
 	left:350px;
 }
+.container .img-description{
+	position: absolute;
+	margin-bottom:100px;
+	opacity: 0;
+	color:#fff;
+}
+.img-description-content{
+	padding:20px;
+	color:#fff;
+}
+.img-description-content *{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+}
+.container .img-description:hover{
+	opacity: 1;
+	background-color: rgba(0,0,0,0.5);
+	transition:background-color 500ms;
+}
+
 .container img{
 	position: absolute;
 	margin-bottom:100px;
+	opacity: 1;
 }
 /*Nav Styling*/
 nav{
@@ -117,19 +138,19 @@ nav .short-bio{
 }
 
 /*Link styling for nav*/
-nav a:link{
+a:link{
 	color:#111;
 	text-decoration: none;
 }
-nav a:visited{
+a:visited{
 	color:#111;
 	text-decoration: none;
 }
-nav a:hover{
+a:hover{
 	color:#111;
 	text-decoration: underline;
 }
-nav a:active{
+a:active{
 	color:#111;
 }
 /*Text post stuff*/
