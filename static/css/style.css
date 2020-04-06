@@ -133,6 +133,15 @@ nav a:active{
 	color:#111;
 }
 
+.container#text-post{
+	padding:0px 10px;
+	line-height: 1.25em;
+}
+.text-post-title{
+	line-height: 1.5em;
+	font-size: 2.3em;
+}
+
 /*Media queries*/
 @media only screen and (max-width: 619px) {
 	nav{
@@ -159,6 +168,10 @@ nav a:active{
 		width:100%;
 		top:50px;
 	}
+	.container#text-post{
+		width:95%;
+		margin: 0 auto;
+	}
 	nav .short-bio,nav ul, nav hr{
 		display: none;
 	}
@@ -182,10 +195,11 @@ nav a:active{
 		width:70%;
 		left:30%;
 	}
+	.container#text-post{
+		width:65%;
+	}
 	nav h1{
 		font-size: 1.1em;
-		font-height:1.1em;
-		font-weight: bold;
 	}
 	nav #open-menu{
 		display: none;
@@ -202,18 +216,19 @@ nav a:active{
 	nav h1{
 		font-size: 1.2em;
 		line-height: 1.4em;
-		font-weight: normal;
 	}
 }
 
-@media only screen and (min-width: 1000px){
-	.container{
-		width:80%;
-		left:20%;
+@media only screen and (min-width: 1000px) {
+	.container {
+		width: 80%;
+		left: 20%;
 	}
-	nav{
-		width:20%;
+
+	nav {
+		width: 20%;
 	}
+
 	nav h1{
 		font-size: 1.5em;
 		line-height: 1.5em;
@@ -226,6 +241,13 @@ nav a:active{
 		height: 50px;
 		left:350px;
 	}
+	.container#text-post{
+		width: 60%;
+		height: 50px;
+		left:350px;
+		max-width: 700px;
+		padding-top:20px;
+	}
 	nav {
 		width: 300px;
 		position: fixed;
@@ -233,5 +255,9 @@ nav a:active{
 	}
 	nav h1 {
 		line-height: 1.7em;
+	}
+	.text-post-title {
+		line-height: 1.5em;
+		font-size: 2.3em;
 	}
 }
