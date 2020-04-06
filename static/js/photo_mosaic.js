@@ -2,11 +2,11 @@
 
 $(document).ready(function () {
     $(function(){
-        mosaicGrid('.container', 'img');
+        mosaicGrid('.photo-grid', 'img');
     });
 
     $(window).resize(function(){
-        mosaicGrid('.container', 'img');
+        mosaicGrid('.photo-grid', 'img');
     });
 
     $(".menu-toggle").click(function () {

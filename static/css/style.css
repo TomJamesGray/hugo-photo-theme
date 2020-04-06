@@ -132,7 +132,7 @@ nav a:hover{
 nav a:active{
 	color:#111;
 }
-
+/*Text post stuff*/
 .container#text-post{
 	padding:0px 10px;
 	line-height: 1.25em;
@@ -140,6 +140,12 @@ nav a:active{
 .text-post-title{
 	line-height: 1.5em;
 	font-size: 2.3em;
+}
+#text-post p{
+	margin-bottom:20px;
+}
+#text-post img{
+	max-width:95%;
 }
 
 /*Media queries*/
