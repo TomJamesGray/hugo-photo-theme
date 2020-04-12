@@ -55,7 +55,7 @@ html,body{
 }
 h1,h2,h3,h4,h5,h6,p{
     color:#111;
-	font-family: 'Lora', serif;
+	font-family: 'Barlow', sans-serif;
 }
 h1{
     font-size:2em;
@@ -91,7 +91,7 @@ h5{
 }
 .img-description-content *{
 	color:#fff;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 }
 .container .img-description:hover{
 	opacity: 1;
@@ -104,13 +104,16 @@ h5{
 	margin-bottom:100px;
 	opacity: 1;
 }
+.photo-grid img{
+	visibility: hidden;
+}
 /*Nav Styling*/
 nav{
 	width:300px;
 	position:fixed;
 	left:0px;
 	/*top:0px;*/
-	font-family: 'Lora', serif;
+	font-family: 'Barlow', sans-serif;
 	font-size: 24px;
 	padding-left:10px;
 	padding-top: 10px;
@@ -165,10 +168,27 @@ a:active{
 #text-post p{
 	margin-bottom:20px;
 }
-#text-post img{
+.container#text-post img{
 	max-width:95%;
+	position:inherit;
+	margin: 20px 0px;
 }
-
+.container#text-post figure{
+	/*max-width: 95%;*/
+}
+.container#text-post figure img{
+	margin-bottom: 0px;
+	max-width: 100%;
+	display: block;
+}
+.container#text-post figure figcaption{
+	background-color: #D0D0D0;
+	line-height: 2em;
+	padding:10px;
+}
+.container#text-post figure{
+	margin-bottom: 20px;
+}
 /*Media queries*/
 @media only screen and (max-width: 619px) {
 	nav{

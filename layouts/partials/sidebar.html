@@ -3,11 +3,11 @@
         <a href="/">
             <h1>{{ .Site.Title }}</h1>
         </a>
-        <a href="#" class="menu-toggle" id="open-menu">
+        <a class="menu-toggle" id="open-menu">
             <h3>Menu</h3>
         </a>
         {{ with .Site.Params.shortBio }}
-        <p class="short-bio">{{ . }}</p>
+            <p class="short-bio">{{ . }}</p>
         {{end}}
         {{ with .Site.Menus }}
             <hr>
@@ -20,7 +20,7 @@
                 </li>
                 {{end}}
             </ul>
-            {{ with .socials }}
+            {{ with .projects }}
             <ul class="menu-section">
                 {{ range . }}
                 <li>
@@ -29,8 +29,19 @@
                     </a>
                 </li>
                 {{end}}
-            {{end}}
             </ul>
+        {{end}}
+            {{ with .socials }}
+            <ul class="menu-section">
+                {{ range . }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+            </ul>
+        {{end}}
+        {{end}}
         {{end}}
 
     </nav>

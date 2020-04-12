@@ -46,7 +46,7 @@ function mosaicGrid(selector,target) {
         columns = 1;
     }
     else{
-        columns = 3;
+        columns = 2;
     }
     var cols = Array(columns).fill(0);
     var allTarget = $(selector).find(target);
@@ -56,7 +56,6 @@ function mosaicGrid(selector,target) {
         return;
     allTarget.one('load', function(e){
         var pos = minPos(cols);
-        console.log("loading")
         var x = pos * (imgWidth + padding);
         var y = cols[pos];
 
@@ -68,6 +67,7 @@ function mosaicGrid(selector,target) {
 
         updatedCss["height"] =  $(this).height()
         $(this).siblings(".img-description").css(updatedCss );
+        $(this).css("visibility","visible");
         $(this).off(e);
     }).each(function(){
     if(this.complete)
